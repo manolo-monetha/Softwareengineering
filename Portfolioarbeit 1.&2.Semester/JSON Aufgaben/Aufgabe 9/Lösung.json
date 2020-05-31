@@ -1,0 +1,28 @@
+{
+	"documentationItems": [
+		{ 
+			"text": "Rotorbürste läuft nicht rund",
+			"createdDate": "2018-10-16T14:15:25.983Z",
+			"createdBy": "heinz"
+		},
+			"text": "Pumpe läuft heiß",
+			"createdDate": "2018-10-16T14:25:25.983Z",
+			"createdBy": "heinz"
+		}	
+	],
+	"assignedResources": [
+		{
+			"name": "Heinz",
+			"qualifications": ["elec", "mech"],
+			"capacityPerDay": 8
+		},
+		{
+			"name": "Peter",
+			"qualifications": ["weld","mech"],
+			"capacityPerDay": 6
+		}
+	],
+	"machine": "45-PKG-SPEC-1894894-8",
+	"description": "Produktionsausfall",
+	"priority": 2
+}
