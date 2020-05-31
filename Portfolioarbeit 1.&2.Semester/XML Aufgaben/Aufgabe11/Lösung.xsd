@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> <!--xmnls:xs declares "xs" -->
+
+    <xs:complexType name="mashStepType">
+        <xs:sequence>
+            <xs:element name="NAME" type="xs:string"/>
+            <xs:element name="VERSION" type="xs:integer"/>
+            <xs:element name="TYPE" type="xs:string"/>
+            <xs:element name="STEP_TEMP" type="xs:integer"/>
+            <xs:element name="STEP_TIME" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mashStepsType">
+        <xs:sequence>
+            <xs:element name="MASH_STEP" type="mashStepType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="mashType">
+        <xs:sequence>
+            <xs:element name="NAME" type="xs:string"/>
+            <xs:element name="VERSION" type="xs:integer"/>
+            <xs:element name="GRAIN_TEMP" type="xs:integer"/>
+            <xs:element name="MASH_STEPS" type="mashStepsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="MASH" type="mashType"/>
+</xs:schema>
